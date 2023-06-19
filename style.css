@@ -108,8 +108,8 @@ body {
 .social-links a{
     font-size: 22px;
     border: 1px solid #fff;
-    /* color: #fff; */
-
+    color: #fff;
+    background-color: #154f5e;
     padding: 5px;
     margin: 15px;
     cursor: pointer;
@@ -124,7 +124,7 @@ body {
     display: none;
 }
 
-@media(max-width: 300px){
+@media(max-width: 400px){
     .navbar{
         height: 80px;
     }
@@ -193,6 +193,69 @@ body {
         width: auto;
         /* margin: 30px; */
     }
+    .contact-left{
+        flex-basis: 100%;
+    
+    }
+    .contact-right{
+        flex-basis: 100%;
+    }
+    .contact-right p{
+        text-align: right;
+        font-size: smaller;
+    }
+    .contact-left p{
+		/* margin-top: 20px;
+		margin-left: 15px; */
+		margin: auto;
+		font-size: 10px;
+        text-align: left;
+        justify-items: left;
+	 }
+    .contact-left p i{
+        font-size: 4px;
+        text-align: left;
+        display: none;
+    }
+    .contact-right{
+        margin: auto;
+    }
+
+    /* .contact {
+		font-size: 30px;
+		font-weight: 500;
+		margin: auto;
+	    padding: 70px 150px;
+        justify-content: center;
+		color: var(--bg-color);
+	} */
+    .contact { 
+        background:#154f5e; 
+        width: auto;
+        margin: auto;
+        padding: 20px 50px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-size: cover;
+     } 
+	.contact-left h3{
+	   font-size: 8px;
+	   margin-left: 25px;
+	   /* margin-right: 35px; */
+	}
+   
+	.contact-left p {
+		font-size: smaller;
+	}
+    .contact-box{
+    margin: auto;
+    border: 1px solid transparent;
+    width: 160px;
+    height: auto;
+    border-radius: 10px;
+}
 }
 #blogs{
     color: #154f5e;
@@ -227,10 +290,10 @@ body {
 }
 .container .card h2{
     font-size: 26px;
-    color: #97fa03;
+    /* color:#adff2f; */
     position: relative;
     margin-bottom: 5px;
-    background-color: #999;
+    background-color:#adff2f;
 }
 .container .card p{
     font-size: 15px;
@@ -309,9 +372,12 @@ body {
     padding: 5px 30px;
     margin-bottom: 6px;
     color:#242020;
+    font-family: 'poppins', sans-serif;
 }
 .cols-2 b{
-    color: #adff2f;
+    color:#154f5e;
+    font-weight: bold;
+
 }
 .cols-2 h1{
     color:#154f5e;
@@ -331,4 +397,118 @@ body {
 }
 .cols-2 a:hover{
     background-color:#adff2f;
+}
+/* .contact{
+    margin: 10px 30px;
+    background:#154f5e;
+} */
+.contact { 
+ 	background:#154f5e; 
+ 	width: 100%;
+ 	margin: 100px auto;
+ 	padding: 30px 30px;
+ 	display: flex;
+ 	align-items: left;
+ 	justify-content: left;
+ 	text-align: left;
+ 	border-radius: 10px;
+ 	background-size: cover; 
+  } 
+.contact-left{
+    flex-basis: 100%;
+
+}
+.contact-right{
+    flex-basis: 100%;
+}
+.sub-title {
+    font-size: 50px;
+    font-weight: 500;
+    margin: 40, 0;
+   padding: 0;
+}
+.sub-title h2{
+    font-size: 33px;
+    color:black;
+    margin-bottom: 8px;
+    margin-top: 2px;
+    text-align: left;
+    margin-left: 25px;
+}
+.contact-left p{
+    color:antiquewhite;
+    margin: 20px auto;
+    text-align: left;
+    /* font-size: 25px; */
+    font-weight: 300;
+}
+.contact-left p i{
+	color:#97fa03;
+	/* margin-right: 20px; */
+	margin-left: 20px;
+	font-size: 20px;
+    text-align: left;
+}
+.contact-right form{
+    width: 100%;
+	margin: 2px auto;
+}
+/* .contact-box{
+    margin: 8px 0;
+    border: 1px solid transparent;
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+} */
+.details input{
+    padding: 8px 15px;
+    width: 95%;
+    margin: 8px;
+    border: 1px solid #999;
+    border-radius: 8px;
+}
+.details textarea{
+    padding: 20px 8px;
+    width: 95%;
+    margin: 8px;
+    border: 1px solid #999;
+    border-radius: 8px;
+}
+.details button{
+    padding: 5px 15px;
+    margin: 10px;
+    background-color:#adff2f;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 1px solid;
+    font-size: 20px;
+}
+.details button:hover{
+    background: #fff;
+}
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    bottom: 0;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer-col-1{
+    padding: 10px 30px;
+    color: #fff;
+    flex-basis: 43%;
+}
+.footer-col-1 img{
+    height: 230px;
+    width: 230px;
+    margin-bottom: 2px;
+}
+.footer-col-1 h2{
+    color:#97fa03;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 4px;
 }

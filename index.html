@@ -19,22 +19,23 @@
         <div class="nav-links" id="navLinks">
             <i class='bx bx-x' onclick="hidemenu()"></i>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#blogs">Services</a></li>
                 <li><a href="#">Testimonial</a></li>
                 <li><a href="#">Team</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
         <i class='bx bx-menu' onclick="showmenu()"></i>
     </div>
+    <div class="home" id="home">
     <div class="text-box">
         <div class="image-box">
             <img src="images/profile.jpg">
             <h1>I'm Shadrack Mwongela</h1>
-            <h2>For Legitimate Photography</h2>
+            <h2>For Legitimate Photography & Videography</h2>
         </div>
         <p>"When you photograph people in color, you photograph their attire. <br>
         But when you photograph people in Black and White you capture their souls!"</p>
@@ -44,12 +45,12 @@
             <a href="https://instagram.com/mish_magic?igshid=MzNlNGNkZWQ4Mg=="><i class='bx-fw bx bxl-instagram'></i></a>
             <a href="https://api.whatsapp.com/send?phone=254715104371"><i class='bx-fw bx bxl-whatsapp'></i></a>
             <a href="#"><i class='bx bxl-tiktok' ></i></a>
-
         </div>
+     </div>
     </div>
    </div> 
    <section id="blogs">
-    <h1>My Blogs</h1>
+    <h1>My Services</h1>
     <div class="container">
         <div class="card">
             <div class="imagebox">
@@ -82,10 +83,40 @@
                 <a href="#">See more...</a>
              </div>
         </div>
+        <div class="card">
+            <div class="imagebox">
+                <img src="images/drone.jpg">
+            </div>
+            <h2>Drone/Aerial Services</h2>
+            <p>We provide the best drone Photography and Videograpphy services to those who are interested at an affordable price.Welcome to drone experience!</p>
+            <div class="btn">
+            <a href="#">See more...</a>
+         </div>
+        </div>
+        <div class="card">
+            <div class="imagebox">
+                <img src="images/Musc_vid.jpg">
+            </div>
+            <h2> Filming Services</h2>
+            <p>We offer quality music video production services to interested clients.Welcome All!</p>
+            <div class="btn">
+            <a href="#">See more...</a>
+         </div>
+        </div>
+        <div class="card">
+            <div class="imagebox">
+                <img src="images/port.jpg">
+            </div>
+            <h2>portraiture Photography</h2>
+            <p>If you need high-end and creative individual shots, our company is the best you will ever get,  at a good price.Welcome!</p>
+            <div class="btn">
+            <a href="#">See more...</a>
+         </div>
+        </div>
     </div>
    </section>
 
-   <section class="gallery">
+   <section class="gallery" id="gallery">
       <h1>Gallery</h1>
    <div class="row">
     <div class="column">
@@ -146,13 +177,13 @@
 
    </section>
 
-   <div class="about">
+   <div class="about" id="about">
     <div class="cols-1">
         <img src="images/cam.webp">
     </div>
     <div class="cols-2">
         <h1>About US</h1>
-        <P>Mish Magic photography was founded by <b>Shadrack Mwongela</b>. It is an award-winning Kenyan wedding photography company
+        <P><strong>Mish_Magic</strong> photography was founded by <b>Shadrack Mwongela</b>. It is an award-winning Kenyan wedding photography company
             with the aim of providing high-quality photography services, focusing primarily in wedding coverings, corporate, product, and portraiture.
             Additionally, it provides drone and music video production videography services.
            It has been rated as one of the best service providers in terms of photography and on other related sectors.</P>
@@ -160,8 +191,15 @@
     </div>
    </div>
 
-   <section class="Contact">
-    <h2>Contact</h2>
+   <section class="contact" id="contact">
+    <div class="contact-left">
+    <h2 class="sub-title">Contact Me</h2>
+    <p><i class='bx bx-user'></i>Shadrack Mwongela</p>
+    <p><i class='bx bx-current-location'></i>Nairobi-Kenya</p>
+    <p><i class='bx bx-paper-plane'></i>mishmagic9@.gmail.com</p>
+    <p><i class='bx bx-phone'></i>+254715104371</p>
+  </div>
+  <div class="contact-right">
     <p>To make any bookings or consultation on any information;</p>
     <div class="contact-box">
         <form class="details">
@@ -172,8 +210,23 @@
            <button type="submit">Submit</button>
         </form>
     </div>
+</div>
+</section>
 
-   </section>
+<footer>
+    <div class="footer-col-1">
+        <img src="images/image4.jpg">
+        <h2>Mish_Magic Photography</h2>
+        <p>This is the official website for Mish_Magic photography, any updates or communications are made through here.
+            You can possibly book us for your event through here and our team will get in touch with you for the arrangements. Try us today for an amazing work.<br>!Magic All The Way!</p>
+    </div>
+    <div class="footer-col-2">
+        <h5>Tel: +254715104371 </h5>
+        <a href="#">Terms and Conditions</a>
+        <a href="#">You need help?</a>
+        <p>Mish_Magic Photography &#169; All Rights Reserved</p>
+    </div>
+</footer>
    <script>
     var navLinks=document.getElementById("navLinks")
     function showmenu(){
