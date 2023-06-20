@@ -105,7 +105,7 @@ body {
     text-align: center;
     margin: 5px 80px;
 }
-.social-links h3{
+.image-box h3{
     font-size: 26px;
     color:darkcyan;
     letter-spacing: 2px;
@@ -162,13 +162,13 @@ body {
         font-size: 15px;
         margin: auto;
     }
-    .social-links h3{
+    .image-box h3{
         font-size: 20px;
     }
     .social-links a{
-        font-size: 18px;
-        margin: 8px;
-        padding: 3px;
+        font-size: 10px;
+        margin: 6px;
+        padding: 2px;
     }
     .navbar .nav-links{
         /* position: absolute; */
