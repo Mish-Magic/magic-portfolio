@@ -82,9 +82,9 @@ body {
     margin-bottom: 10px;
 }
 .image-box h1{
-    color:aquamarine;
+    color:darkcyan;
     font-size: 25px;
-    font-weight: 10;
+    font-weight: 30;
     margin-bottom: 10px;
     letter-spacing: 2px;
     font-family:'Courier New', Courier, monospace;
@@ -94,6 +94,10 @@ body {
     letter-spacing: 4px;
     margin-bottom: 10px;
     font-weight: 100;
+}
+.image-box span{
+    color:darkcyan;
+    font-weight: bold;
 }
 .text-box p{
     color: #fff;
@@ -272,11 +276,15 @@ body {
     color: #154f5e;
     font-size: 42px;
     text-align: center;
+    /* margin: 5px 5px; */
 }
 #blogs p{
     /* color: #fff; */
     color: #242020;
     font-size: 16px;
+}
+#blogs .btn a{
+    margin-bottom: 2px;
 }
 .container{
     width: 100%;
@@ -298,6 +306,8 @@ body {
 .container .card .imagebox img{
     width: 100%;
     height: 350px;
+
+    margin-top: 2px;
 }
 .container .card h2{
     font-size: 26px;
@@ -309,7 +319,7 @@ body {
 .container .card p{
     font-size: 15px;
     padding: 6px 8px;
-    margin-bottom: 0;
+    margin-bottom: 2px;
 }
 .container .card .btn a{
     font-size: 16px;
@@ -321,6 +331,7 @@ body {
     color: red;
     padding: 5px;
     transform: 0.5s;
+    margin-bottom: 2px;
 }
 .container .card .btn a:hover{
     background-color:aquamarine;
@@ -335,6 +346,7 @@ body {
     color:#154f5e;
     font-size: 42px;
     text-align: center;
+    margin-top: 15px;
     margin-bottom: 15px;
 }
 .gallery .row{
@@ -397,7 +409,8 @@ body {
     width: 100%;
     display: flex;
     height: auto;
-    margin-top: 30px;
+    margin-top: 40px;
+    margin-bottom: 2px;
 }
 .cols-1{
     flex-basis: 40%;
@@ -405,9 +418,10 @@ body {
     justify-content: space-between;
 }
 .cols-1 img{
-    height: 75%;
+    height: 70%;
     width: 70%;
-    margin: 30px;
+    margin-bottom: 18px;
+    margin-top: 40px;
 }
 .cols-1 img:hover{
     transform: scale(1.1)
@@ -433,6 +447,8 @@ body {
 .cols-2 h1{
     color:#154f5e;
     font-size: 40px;
+    text-align: center;
+    justify-content: center;
 }
 .cols-2 a{
     font-size: 15px;
