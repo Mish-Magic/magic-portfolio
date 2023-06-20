@@ -23,8 +23,8 @@ body {
 } */
 
 .header{
-    width: 100%;
-    height: 110vh;
+    width: 100% auto;
+    height: 100vh;
     position: relative;
     background: url(images/Background3.jpg);
     background-size: cover;
@@ -55,14 +55,17 @@ body {
     list-style: none;
 }
 .nav-links ul li a{
-    color: #fff;
+    color:#fff;
     font-size: 16px;
     text-decoration: none;
     padding: 2px;
-    border-radius: 5px;
+    border-radius: 2px;
+    justify-content: right;
+    text-align: right;
+    position:block;
 }
 .nav-links ul li a:hover{
-    background-color:aquamarine;
+    background-color:cadetblue;
     color: black;
 }
 .text-box{
@@ -122,7 +125,7 @@ body {
     color: #fff;;
     /* background-color: #5458d6; */
     padding: 3px;
-    margin: 15px;
+    margin: 10px;
     cursor: pointer;
     border-radius: 10px;
     transition: 0.5s;
@@ -130,7 +133,8 @@ body {
 }
 .social-links a:hover{
     border: 1px solid #ed3a3a;
-    background-color:cornflowerblue;
+    background-color:cadetblue;
+    color: #000;
 }
 /* .navbar .nav-links .bx{
     display: relative;
@@ -155,7 +159,7 @@ body {
     }
     .header{
         width: 100%;
-        height: 120vh;
+        height: 95vh;
         position: relative;
     }
     .image-box h1{
@@ -178,7 +182,7 @@ body {
     }
     .social-links a{
         font-size: 16px;
-        margin: 8px;
+        margin: 10px;
         padding: 3px;
     }
     .navbar .nav-links{
