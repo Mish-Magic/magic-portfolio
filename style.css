@@ -24,9 +24,9 @@ body {
 
 .header{
     width: 100%;
-    height: 110vh;
+    height: 115vh;
     position: relative;
-    background: url(images/background~2.jpg);
+    background: url(images/MAGIC\ LOGO2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
@@ -62,7 +62,7 @@ body {
     border-radius: 5px;
 }
 .nav-links ul li a:hover{
-    background-color: greenyellow;
+    background-color:aquamarine;
     color: black;
 }
 .text-box{
@@ -98,23 +98,24 @@ body {
     text-align: center;
     margin: 5px 80px;
 }
-.social-links h3{
+/* .social-links h3{
     font-size: 26px;
     color: #adff2f;
     letter-spacing: 2px;
     font-weight: bold;
     margin-bottom: 10px;
-}
+} */
 .social-links a{
-    font-size: 22px;
+    font-size: 10px;
     border: 1px solid #fff;
     color: #fff;
     background-color: #154f5e;
     padding: 5px;
-    margin: 15px;
+    margin: 0 46px;
     cursor: pointer;
     border-radius: 10px;
     transition: 0.5s;
+    position: center;
 }
 .social-links a:hover{
     border: 1px solid #000;
@@ -296,7 +297,7 @@ body {
     /* color:#adff2f; */
     position: relative;
     margin-bottom: 5px;
-    background-color:#adff2f;
+    background-color:rgb(134, 163, 153);
 }
 .container .card p{
     font-size: 15px;
@@ -315,7 +316,7 @@ body {
     transform: 0.5s;
 }
 .container .card .btn a:hover{
-    background-color: #adff2f;
+    background-color:aquamarine;
     color: #000;
 }
 .gallery{
@@ -399,7 +400,7 @@ body {
     text-align: center;
 }
 .cols-2 a:hover{
-    background-color:#adff2f;
+    background-color:aquamarine;
 }
 /* .contact{
     margin: 10px 30px;
@@ -446,7 +447,7 @@ body {
     font-weight: 300;
 }
 .contact-left p i{
-	color:#97fa03;
+	color:aquamarine;
 	/* margin-right: 20px; */
 	margin-left: 20px;
 	font-size: 20px;
@@ -480,7 +481,7 @@ body {
 .details button{
     padding: 5px 15px;
     margin: 10px;
-    background-color:#adff2f;
+    background-color:#b8e9d8;
     border-radius: 30px;
     cursor: pointer;
     border: 1px solid;
@@ -510,7 +511,7 @@ footer{
     margin-bottom: 2px;
 }
 .footer-col-1 h2{
-    color:#97fa03;
+    color:darkslategrey;
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 4px;
@@ -533,11 +534,11 @@ footer{
     cursor: pointer;
 }
 .footer-col-2 a:hover{
-    color:#adff2f
+    color:#154f5e;
 }
 .footer-col-2 p, h5{
     font-size: 16px;
-    color:#adff2f;
+    color:cadetblue;
 }
 @media(max-width:767px){
     .about{
