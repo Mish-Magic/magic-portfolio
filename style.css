@@ -24,7 +24,7 @@ body {
 
 .header{
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     position: relative;
     background: url(images/Background3.jpg);
     background-size: cover;
@@ -136,6 +136,12 @@ body {
     display: relative;
 } */
 
+@media(max-width: 350px){
+    .social-links a{
+        color: #000;
+        background-color: cadetblue;
+    }
+}
 @media(max-width: 600px){
     .navbar{
         height: 80px;
@@ -146,6 +152,11 @@ body {
     .navbar img{
         height: 100%;
         width: 150px;
+    }
+    .header{
+        width: 100%;
+        height: 120vh;
+        position: relative;
     }
     .image-box h1{
         font-size: 26px;
@@ -162,13 +173,13 @@ body {
         font-size: 15px;
         margin: auto;
     }
-    .image-box h3{
+    .social-links h3{
         font-size: 20px;
     }
     .social-links a{
-        font-size: 10px;
-        margin: 6px;
-        padding: 2px;
+        font-size: 16px;
+        margin: 8px;
+        padding: 3px;
     }
     .navbar .nav-links{
         /* position: absolute; */
@@ -282,6 +293,13 @@ body {
     text-align: center;
     margin-top: 5px;
     margin-bottom: 15px;
+}
+#blogs{
+    margin: 20px;
+    
+}
+#blogs h1{
+    font-size: 35px;
 }
 }
 #blogs{
