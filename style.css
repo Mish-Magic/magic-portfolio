@@ -286,8 +286,9 @@ body {
 }
 #blogs{
     color: #154f5e;
-    font-size: 42px;
+    font-size: 36px;
     text-align: center;
+    margin-top: 30px;
     /* margin: 5px 5px; */
 }
 #blogs p{
