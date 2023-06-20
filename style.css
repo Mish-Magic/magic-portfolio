@@ -271,6 +271,18 @@ body {
     height: auto;
     border-radius: 10px;
 }
+.gallery{
+    position: relative;
+    padding: 10px;
+    margin-top: 50px;
+}
+.gallery h1{
+    color:#154f5e;
+    font-size: 42px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
 }
 #blogs{
     color: #154f5e;
