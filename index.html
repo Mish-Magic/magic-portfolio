@@ -44,10 +44,10 @@
         <div class="social-links">
             <!-- <h2>For Legitimate Photography & Videography</h2><br><br> -->
             <!-- <h3>Let's Connect Now</h3> -->
-            <a href="https://www.facebook.com/Magicalltheway?mibextid=ZbWKwL"><i class='bx-fw bx bxl-facebook'></i></a>
-            <a href="https://instagram.com/mish_magic?igshid=MzNlNGNkZWQ4Mg=="><i class='bx-fw bx bxl-instagram'></i></a>
-            <a href="https://api.whatsapp.com/send?phone=254715104371"><i class='bx-fw bx bxl-whatsapp'></i></a>
-            <a href="https://www.tiktok.com/@shaddymtumishi?_t=8dJi3jgH434&_r=1"><i class='bx-fw bx bxl-tiktok' ></i></a>
+            <a href="https://www.facebook.com/Magicalltheway?mibextid=ZbWKwL" target="_blank"><i class='bx-fw bx bxl-facebook'></i></a>
+            <a href="https://instagram.com/mish_magic?igshid=MzNlNGNkZWQ4Mg==" target="_blank"><i class='bx-fw bx bxl-instagram'></i></a>
+            <a href="https://api.whatsapp.com/send?phone=254715104371" target="_blank"><i class='bx-fw bx bxl-whatsapp'></i></a>
+            <a href="https://www.tiktok.com/@shaddymtumishi?_t=8dJi3jgH434&_r=1" target="_blank"><i class='bx-fw bx bxl-tiktok' ></i></a>
         </div>
      </div>
     </div>
@@ -267,13 +267,14 @@
   <div class="contact-right">
     <p>To make any bookings or consultation on any information;</p>
     <div class="contact-box">
-        <form class="details">
-            <input type="text" name="name" placeholder="First Name" required>
-            <input type="text" name="name" placeholder="Last Name" required>
+        <form name='submit-to-google-sheet' class="details">
+            <input type="text" name="fname" placeholder="First Name" required>
+            <input type="text" name="lname" placeholder="Last Name" required>
             <input type="text" name="email" placeholder="Email Id" required>
-           <textarea class="message" placeholder="Your Message"></textarea>
+           <textarea name="message" placeholder="Your Message"></textarea>
            <button type="submit">Submit</button>
         </form>
+        <span id="msg"></span>
     </div>
 </div>
 </section>
@@ -300,6 +301,26 @@
     function hidemenu(){
         navLinks.style.width='0%';
     }
+   </script>
+
+   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyabChYkZPFmObWUcU4zijBwi94Eyggx37bi2ypZL02HL_t4qbSP3LFBp5N72nYN4UWVw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+    fetch(scriptURL, {method: 'POST', body: new FormData(form)})
+    .then(response => {
+        msg.innerHTML = "Message delivered Successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+    })
+    .catch(error => console.error('Error!', error.message))
+    })
+
    </script>
 </body>
 </html>
